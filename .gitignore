@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# LaTeX auxiliary files
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# macOS
+.DS_Store
+__MACOSX/
+
+# Large dataset files (optional - uncomment if you want to exclude)
+# UCI HAR Dataset/
+# *.csv
+
+# IDE
+.idea/
+.vscode/
+*.swp
