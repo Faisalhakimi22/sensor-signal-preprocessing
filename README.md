@@ -1,10 +1,10 @@
 # Sensor Signal Preprocessing Pipeline
 
-A comprehensive preprocessing pipeline for Human Activity Recognition (HAR) using smartphone sensor data.
+An 8-stage preprocessing pipeline for Human Activity Recognition (HAR) using smartphone accelerometer/gyroscope data — the unglamorous but high-leverage part of an ML project: turning noisy raw sensor signals into a clean, leakage-free feature set.
 
 ## Overview
 
-This pipeline implements advanced preprocessing techniques for the UCI HAR dataset, including outlier detection, signal filtering, feature scaling, dimensionality reduction, and feature engineering.
+This pipeline implements preprocessing techniques for the UCI HAR dataset end-to-end: outlier detection (Isolation Forest + IQR), Savitzky-Golay signal filtering, robust feature scaling, PCA-based dimensionality reduction, and statistical-moment feature engineering — each step chosen and ordered to avoid train/test leakage.
 
 ## Pipeline Steps
 
@@ -37,6 +37,8 @@ python preprocessing_pipeline.py
 
 UCI Human Activity Recognition Using Smartphones  
 https://archive.ics.uci.edu/ml/datasets/human+activity+recognition+using+smartphones
+
+Raw and generated data files are intentionally excluded from Git. See [DATA.md](DATA.md) for the expected local dataset layout and reproduction steps.
 
 ## Output
 
